@@ -7,6 +7,12 @@
             alert ('Insira o nome do Amigo!');
             return;
         }
+
+        if (amigos.includes(amigoAdd.value)) {
+            alert ('Nome repetido!');
+            return
+        }
+
         let lista = document.getElementById('lista-amigos');
         amigos.push(amigoAdd.value);
         if (lista.textContent == '') {
