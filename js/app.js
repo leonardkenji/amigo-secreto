@@ -3,6 +3,10 @@
     //adicionar amigos inseridos em um array
     function adicionar() {
         let amigoAdd = document.getElementById('nome-amigo');
+        if (amigoAdd.value == '') {
+            alert ('Insira o nome do Amigo!');
+            return;
+        }
         let lista = document.getElementById('lista-amigos');
         amigos.push(amigoAdd.value);
         if (lista.textContent == '') {
